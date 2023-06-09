@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/registration.js"></script>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./css/registration.css">
+    <style>
+        body {
+            background: linear-gradient(90deg, rgb(73 64 226) 0%, rgb(122 165 207) 35%, rgba(0, 212, 255, 1) 100%);
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .content {
+            border: 5px solid #ccc;
+            box-shadow: 0px -25px 7px -20px #ccc,
+                25px 0px 20px -20px #ccc,
+                0px 25px 20px -20px #ccc,
+                -25px 0px 20px -20px #ccc;
+            border-radius: 10px;
+        }
+
+        .input-box {
+            padding: 10px;
+        }
+
+        input[type=text],
+        select {
+            float: right;
+            clear: both;
+            align-items: right;
+            width: 250px;
+            height: 40px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        input[type=radio] {
+            height: 20px;
+            width: 20px;
+        }
+
+        span {
+            align-items: left;
+            font-family: cursive;
+            margin-right: 20px;
+        }
+
+        input[type=submit] {
+            float: right;
+            margin: 20px;
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        input[type=reset] {
+            float: left;
+            margin: 20px;
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        @media (max-width:780px) {
+            input[type=text],select{
+                width: 180px;
+            }
+            input[type=radio]{
+                width: 18px;
+            }
+            input[type=submit],input[type=reset]{
+                width: 120px;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="display: flex; flex-direction: column; flex-wrap: wrap; align-items: center;">
+        <div class="title"><h1>Hostel Registration Form</h1></div>
+        <div class="content">
+            <form action="https://getform.io/f/2cd1ddcc-51eb-4a6f-8d40-9f952d67a8a5 " method="post">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input name="name" type="text" placeholder="Enter your name" ;>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Semester</span>
+                        <input name="Semester" type="text" placeholder="Enter your semester" ;>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Applying for Hostel</span>
+                        <input type="radio" name="hostel" value="Yes">Yes
+                        <input type="radio" name="hostel" value="No">No
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Registration Number</span>
+                        <input type="text" placeholder="Enter your regno" name="Registration Number" ; >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" name="Email"; >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" name="Phone Number">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <select name="Gender" required>
+                            <option value="none" selected disabled hidden>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                <div class="button">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+                <span style="color:red"></span>
+            </form>
+        </div>
+    </div>
+</body>

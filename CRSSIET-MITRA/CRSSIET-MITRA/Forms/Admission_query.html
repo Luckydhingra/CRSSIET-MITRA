@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./Admission.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="./Admission.webp">
+        </div>
+
+        <div class="form-container">
+            <h1>Admission Form</h1>
+            <form action="https://getform.io/f/2cd1ddcc-51eb-4a6f-8d40-9f952d67a8a5 " method="POST">
+                <input type="text" name="Full Name" placeholder="Full Name" required>
+                <input type="number" name="Registration Number" placeholder="Registration Number" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="number" name="Phone Number" placeholder="Mobile Number" required>
+
+                    <select name="Gender" required>
+                        <option value="none" selected disabled hidden>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+                    <select name="Qualification" required>
+                        <option value="none" selected disabled hidden>Select Qualification</option>
+                        <option value="12th">12th</option>
+                        <option value="Diploma">Diploma</option>
+                    </select>
+
+                <textarea type="text" name="Querry" placeholder="Enter your Querry" style="height: 80px; width: 80%; border: 2px solid #ccc; border-radius: 10px; margin: 10px;" required></textarea>
+                <input type="reset">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
